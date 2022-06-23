@@ -1,0 +1,15 @@
+
+@import "../colors.scss";
+
+.textfield {
+  font-family: "Quicksand", sans-serif;
+  color: $text-color-light;
+  border: 1px solid $border-light;
+  padding: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: $background-medium;
+  width: -webkit-fill-available;
+  //box-shadow: 0 1px 10px rgba(0, 0, 0, 0.125);
+}
+

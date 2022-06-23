@@ -1,0 +1,16 @@
+@import "../colors.scss";
+
+.button {
+  margin: 5px;
+  color: $button-color;
+  padding: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: $main-color;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: $main-color-hover;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.125); 
+}

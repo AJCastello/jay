@@ -1,0 +1,30 @@
+import { Element } from "../Element/Element";
+import { setProp } from "jay/utils/setProp";
+
+import "./TextField.style.scss";
+
+type TextFieldT = {
+  id?: string;
+  tag?: string;
+  type?: string;
+  style?: string;
+  value?: string;
+  events?: Array<{ name: string, callback: (e: Event) => void }>;
+  className?: string | Function;
+  attributes?: Array<{ name: string, value: string }>;
+  placeholder?: string;
+  keyup?: (e: Event) => void;
+  change?: (e: Event) => void;
+  keydown?: (e: Event) => void;
+  keypress?: (e: Event) => void;
+}
+
+export const TextField = (props: TextFieldT) => {
+  const obj = Element({ ...props, tag: "input", defaultClassName: "textfield" }) as HTMLInputElement;
+  props.type ? setProp({obj: obj, attr: "type"}, props.type) : obj.type = "text";
+  props.value && obj.setAttribute("value", props.value)
+  props.placeholder && obj.setAttribute("placeholder", props.placeholder);
+  props.keyup ? obj.addEventListener("keyup", props.keyup) : null;
+  props.change ? obj.addEventListener("change", props.change) : null;
+  return obj;
+}
