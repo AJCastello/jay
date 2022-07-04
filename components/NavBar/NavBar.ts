@@ -10,7 +10,7 @@ type NavBarType = {
   attributes?: Array<{ name: string, value: string }>;
 }
 
-const NavBar = (props: NavBarType) => {
+export const NavBar = (props: NavBarType) => {
   const obj = Element({ tag: "section", className: "navbar", ...props});
   return obj;
 }

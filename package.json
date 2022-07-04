@@ -4,8 +4,7 @@
   "description": "Jay is a framework for creating a single page application.",
   "main": "index.ts",
   "scripts": {
-    "dist": "tsc",
-    "test": "test"
+    "dist": "tsc"
   },
   "repository": {
     "type": "git",

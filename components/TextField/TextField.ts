@@ -1,5 +1,5 @@
 import { Element } from "../Element";
-import { setProp } from "jay/utils";
+import { setProp } from "../../utils";
 
 import "./TextField.style.scss";
 

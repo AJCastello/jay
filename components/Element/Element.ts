@@ -1,4 +1,4 @@
-import { uniKey, setProp } from "jay/utils";
+import { uniKey, setProp } from "../../utils";
 
 export type ElementType = {
   id?: string;
