@@ -1,16 +1,19 @@
-@import "../colors.scss";
+@import "../config.scss";
 
 .button {
-  margin: 5px;
   color: $button-color;
+  cursor: pointer;
+  margin: 5px;
   padding: 10px;
+  font-size: 1.4rem;
   font-weight: normal;
+  font-family: $default-font;
   border-radius: 5px;
   background-color: $main-color;
-  cursor: pointer;
+
 }
 
-.button:hover{
+.button:hover {
   background-color: $main-color-hover;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.125); 
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.125);
 }

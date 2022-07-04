@@ -1,18 +1,19 @@
 
-export type DataType = string | Array<string>
+export type DataType = string | Array<string> | boolean
 
 export type StateType = {
   set: (newData: any) => void;
   get: () => any;
-  data: DataType;
+  data: any;
   changes: any;
   observable: any;
 }
 
-export const State = (data: DataType): StateType => ({
-  set(newData: DataType) {
+export const State = <T> (data: T): StateType => ({
+  set(newData: T) {
     data = newData;
     this.data = newData;
+    console.log(this.changes)
     if (this.observable) this.changes.forEach((change: Function) => change());
   },
   get() {

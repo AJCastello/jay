@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
 :root {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
+$default-font: "Quicksand", sans-serif;
 $main-color: #62b357;
 $main-light-color: #4fc039;
 $second-color: #4fc039;
@@ -27,11 +30,11 @@ $shadow: rgba(0, 0, 0, 0.1);
 $border-success: #c2decc;
 $background-success: #e1f7e2;
 $text-success: #333333;
-//}
 
 .nightmode {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  $default-font: "Quicksand", sans-serif;
   $main-color: #62b357;
   $main-light-color: #6ee258;
   $second-color: #4fc039;

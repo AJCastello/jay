@@ -1,0 +1,16 @@
+.navbar{
+  padding: 0;
+  z-index: 1;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e7e7e7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  @media (min-width: 768px) {
+    padding: 0 15px;
+  }
+}

@@ -1,4 +1,4 @@
-export type DataType = string | Array<string>
+export type DataType = string | Array<string> | boolean
 
 export type StateType = {
   set: (newData: any) => void;
@@ -8,8 +8,14 @@ export type StateType = {
   observable: any;
 }
 
-export const Observer = (state: StateType, change: undefined | (() => any) = undefined) => (
+export const Observer = (state: StateType, change: undefined | (() => any) = undefined, execute: boolean = false) => (
   state.observable = true,
+  execute && (
+    change ?
+      (change(), state.changes.push(() => { change() }))
+      :
+      false
+  ),
   function setObserver(setProp: Function, obj: any) {
     const dataToChange = change ? change : state.get;
     state.changes.push(() => {

@@ -1,9 +1,9 @@
-import { Element } from "../Element/Element";
-import { setProp } from "jay/utils/setProp";
+import { Element } from "../Element";
+import { setProp } from "jay/utils";
 
 import "./TextField.style.scss";
 
-type TextFieldT = {
+type TextFieldType = {
   id?: string;
   tag?: string;
   type?: string;
@@ -19,8 +19,8 @@ type TextFieldT = {
   keypress?: (e: Event) => void;
 }
 
-export const TextField = (props: TextFieldT) => {
-  const obj = Element({ ...props, tag: "input", defaultClassName: "textfield" }) as HTMLInputElement;
+export const TextField = (props: TextFieldType) => {
+  const obj = Element({ tag: "input", ...props, defaultClassName: "textfield" }) as HTMLInputElement;
   props.type ? setProp({obj: obj, attr: "type"}, props.type) : obj.type = "text";
   props.value && obj.setAttribute("value", props.value)
   props.placeholder && obj.setAttribute("placeholder", props.placeholder);
@@ -28,3 +28,4 @@ export const TextField = (props: TextFieldT) => {
   props.change ? obj.addEventListener("change", props.change) : null;
   return obj;
 }
+

@@ -11,7 +11,6 @@ export const setProp = (obj: any, content: Node | Function | string) => {
     typeof content === "function" &&
     content.name === "setObserver"
   ) {
-    console.log("observer")
     content(setProp, obj)
     return;
   }

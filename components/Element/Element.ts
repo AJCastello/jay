@@ -1,7 +1,6 @@
-import { uniKey } from "jay/utils/uniKey";
-import { setProp } from "jay/utils/setProp";
+import { uniKey, setProp } from "jay/utils";
 
-export type ElementT = {
+export type ElementType = {
   id?: string;
   tag: string;
   style?: string;
@@ -12,7 +11,7 @@ export type ElementT = {
   defaultClassName?: string;
 }
 
-export const Element = (props: ElementT) => {
+export const Element = (props: ElementType) => {
   const obj = document.createElement(props.tag);
   obj.id = props.id || uniKey();
   props.className ? setProp({ obj: obj, attr: "className" }, props.className) : obj.className = (props.defaultClassName ? props.defaultClassName : props.tag);

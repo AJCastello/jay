@@ -1,7 +1,7 @@
-import { Element } from "../Element/Element.js";
+import { Element } from "../Element";
 import "./Button.style.scss";
 
-export type ButtonT = {
+export type ButtonType = {
   id?: string;
   tag?: string;
   style?: string;
@@ -12,7 +12,7 @@ export type ButtonT = {
   click?: () => void;
 }
 
-export const Button = (props: ButtonT) => {
+export const Button = (props: ButtonType) => {
   const obj = Element({ ...props, tag: "button" });
   props.click && (obj.addEventListener("click", props.click));
   return obj;
