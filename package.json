@@ -1,5 +1,5 @@
 {
-  "name": "jay",
+  "name": "jay-js",
   "version": "1.0.0",
   "description": "Jay is a framework for creating a single page application.",
   "main": "dist/index.js",
