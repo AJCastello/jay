@@ -15,4 +15,3 @@ export declare const getPotentialMatch: () => MatchType;
 export declare const Router: (routes?: Route[]) => void;
 export declare const Navigate: (path: string) => void;
 export {};
-//# sourceMappingURL=router.d.ts.map

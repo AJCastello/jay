@@ -7,4 +7,3 @@ export declare type StateType = {
     observable: any;
 };
 export declare const State: <T>(data: T) => StateType;
-//# sourceMappingURL=State.d.ts.map

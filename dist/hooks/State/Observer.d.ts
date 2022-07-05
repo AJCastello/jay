@@ -7,4 +7,3 @@ export declare type StateType = {
     observable: any;
 };
 export declare const Observer: (state: StateType, change?: undefined | (() => any), execute?: boolean) => (setProp: Function, obj: any) => void;
-//# sourceMappingURL=Observer.d.ts.map

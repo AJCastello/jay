@@ -22,4 +22,3 @@ declare type TextFieldType = {
 };
 export declare const TextField: (props: TextFieldType) => HTMLInputElement;
 export {};
-//# sourceMappingURL=TextField.d.ts.map

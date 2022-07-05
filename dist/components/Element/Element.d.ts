@@ -15,4 +15,3 @@ export declare type ElementType = {
     defaultClassName?: string;
 };
 export declare const Element: (props: ElementType) => HTMLElement;
-//# sourceMappingURL=Element.d.ts.map

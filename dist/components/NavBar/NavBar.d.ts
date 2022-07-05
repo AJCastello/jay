@@ -12,4 +12,3 @@ declare type NavBarType = {
 };
 export declare const NavBar: (props: NavBarType) => HTMLElement;
 export {};
-//# sourceMappingURL=NavBar.d.ts.map

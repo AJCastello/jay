@@ -12,4 +12,3 @@ declare type CardType = {
 };
 export declare const Card: (props: CardType) => HTMLElement;
 export {};
-//# sourceMappingURL=Card.d.ts.map

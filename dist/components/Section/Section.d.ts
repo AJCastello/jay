@@ -15,4 +15,3 @@ declare type SectionType = {
 };
 export declare const Section: (props: SectionType) => HTMLElement;
 export {};
-//# sourceMappingURL=Section.d.ts.map

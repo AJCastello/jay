@@ -16,4 +16,3 @@ export declare type ButtonType = {
     click?: () => void;
 };
 export declare const Button: (props: ButtonType) => HTMLElement;
-//# sourceMappingURL=Button.d.ts.map
