@@ -1,5 +1,5 @@
 import { Element } from "../Element";
-import "./Button.style.scss";
+import "./Button.style.css";
 
 export type ButtonType = {
   id?: string;

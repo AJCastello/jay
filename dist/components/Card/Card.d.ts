@@ -1,4 +1,4 @@
-import "./Card.style.scss";
+import "./Card.style.css";
 declare type CardType = {
     id?: string;
     tag?: string;

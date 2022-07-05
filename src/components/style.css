@@ -1,4 +1,4 @@
-@import "./config.scss";
+@import "./config.css";
 
 * {
   border: 0;
@@ -8,7 +8,7 @@
   list-style: none;
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: $default-font;
+  font-family: var(--default-font);
   font-weight: 500;
   vertical-align: baseline;
   -webkit-appearance: none;
@@ -16,7 +16,7 @@
 
 html,
 body {
-  color: $text-color-light;
+  color: var(--text-color-light);
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

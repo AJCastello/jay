@@ -1,4 +1,4 @@
-import "./TextField.style.scss";
+import "./TextField.style.css";
 declare type TextFieldType = {
     id?: string;
     tag?: string;

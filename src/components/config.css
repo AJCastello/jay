@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+:root {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  --default-font: "Quicksand", sans-serif;
+  --main-color: #62b357;
+  --main-light-color: #4fc039;
+  --second-color: #4fc039;
+  --main-color-hover: #429e2f;
+  --danger-color: #dc143c;
+  --danger-color-hover: #a80828;
+  --pendent-color: #ff1b48;
+  --warning-color: #ff9c1b;
+  --button-color: #ffffff;
+  --cancel-button: #666666;
+  --cancel-button-hover: #333333;
+  --text-main-color: #ffffff;
+  --text-color-light: #333333;
+  --text-color-dark: #222222;
+  --background-light: #ffffff;
+  --background-medium: #efefef;
+  --background-dark: #f3f3f3;
+  --border-light: #dedede;
+  --border-medium: #cccccc;
+  --contrast: #333333;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --border-success: #c2decc;
+  --background-success: #e1f7e2;
+  --text-success: #333333;
+}
+
+.nightmode {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  --default-font: "Quicksand", sans-serif;
+  --main-color: #62b357;
+  --main-light-color: #6ee258;
+  --second-color: #4fc039;
+  --main-color-hover: #429e2f;
+  --danger-color: #ff1b48;
+  --danger-color-hover: #a80828;
+  --pendent-color: #ff1b48;
+  --warning-color: #ff9c1b;
+  --button-color: #ffffff;
+  --cancel-button: #666666;
+  --cancel-button-hover: #333333;
+  --text-main-color: #333333;
+  --text-color-light: #f4f4f4;
+  --text-color-dark: #cccccc;
+  --background-light: #333333;
+  --background-medium: #222222;
+  --background-dark: #111111;
+  --border-light: #444444;
+  --border-medium: #555555;
+  --contrast: #999999;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --border-success: #729c81;
+  --background-success: #9be49f;
+  --text-success: #333333;
+}

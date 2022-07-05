@@ -1,5 +1,5 @@
 import { Element } from "../Element";
-import "./NavBar.style.scss";
+import "./NavBar.style.css";
 
 type NavBarType = {
   id?: string;

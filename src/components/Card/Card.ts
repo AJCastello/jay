@@ -1,6 +1,6 @@
 import { Element } from "../Element";
 
-import "./Card.style.scss";
+import "./Card.style.css";
 
 type CardType = {
   id?: string;

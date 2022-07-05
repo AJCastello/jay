@@ -1,4 +1,4 @@
-import "./NavBar.style.scss";
+import "./NavBar.style.css";
 declare type NavBarType = {
     id?: string;
     tag?: string;

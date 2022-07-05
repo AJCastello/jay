@@ -1,4 +1,4 @@
-import "./Button.style.scss";
+import "./Button.style.css";
 export declare type ButtonType = {
     id?: string;
     tag?: string;

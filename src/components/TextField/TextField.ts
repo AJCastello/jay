@@ -1,7 +1,7 @@
 import { Element } from "../Element";
 import { setProp } from "../../utils";
 
-import "./TextField.style.scss";
+import "./TextField.style.css";
 
 type TextFieldType = {
   id?: string;

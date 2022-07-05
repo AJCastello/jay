@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./style.css";
 export * from "./Button/Button";
 export * from "./Element/Element";
 export * from "./Section/Section";

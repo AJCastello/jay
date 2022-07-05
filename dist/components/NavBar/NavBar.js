@@ -1,5 +1,5 @@
 import { Element } from "../Element";
-import "./NavBar.style.scss";
+import "./NavBar.style.css";
 export const NavBar = (props) => {
     const obj = Element({ tag: "section", className: "navbar", ...props });
     return obj;

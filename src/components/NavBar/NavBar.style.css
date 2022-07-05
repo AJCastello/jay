@@ -10,7 +10,4 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   background-color: #f8f8f8;
-  @media (min-width: 768px) {
-    padding: 0 15px;
-  }
 }

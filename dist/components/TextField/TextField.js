@@ -1,6 +1,6 @@
 import { Element } from "../Element";
 import { setProp } from "../../utils";
-import "./TextField.style.scss";
+import "./TextField.style.css";
 export const TextField = (props) => {
     const obj = Element({ tag: "input", ...props, defaultClassName: "textfield" });
     props.type ? setProp({ obj: obj, attr: "type" }, props.type) : obj.type = "text";
