@@ -2,11 +2,9 @@
   "name": "jay-js",
   "version": "1.0.0",
   "description": "Jay is a framework for creating a single page application.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.js",
-  "files": [
-    "dist"
-  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.js",
+  "files": ["./dist"],
   "scripts": {
     "dist": "tsc"
   },
@@ -26,7 +24,8 @@
     "url": "https://github.com/AJCastello/jay/issues"
   },
   "homepage": "https://github.com/AJCastello/jay#readme",
-  "dependencies": {
-    "typescript": "^4.7.4"
+  "devDependencies": {
+    "typescript": "^4.7.4", 
+    "sass": "^1.53.0"
   }
 }
