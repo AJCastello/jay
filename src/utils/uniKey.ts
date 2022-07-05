@@ -4,7 +4,7 @@ export const uniKey = (num = 10) => {
   const newKey = Array(num)
     .fill("")
     .map((char) => {
-      char = chars.charAt(Math.floor(Math.random() * chars.length))
+      if(char) char = chars.charAt(Math.floor(Math.random() * chars.length))
     })
     .join("")
   return newKey;

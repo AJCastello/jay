@@ -2,7 +2,11 @@
   "name": "jay",
   "version": "1.0.0",
   "description": "Jay is a framework for creating a single page application.",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dist": "tsc"
   },
@@ -11,12 +15,18 @@
     "url": "git+https://github.com/AJCastello/jay.git"
   },
   "keywords": [
-    "Jay", "js", "single page application", "framework"
+    "Jay",
+    "js",
+    "single page application",
+    "framework"
   ],
   "author": "AJ Castello",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AJCastello/jay/issues"
   },
-  "homepage": "https://github.com/AJCastello/jay#readme"
+  "homepage": "https://github.com/AJCastello/jay#readme",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
 }
