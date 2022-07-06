@@ -2,20 +2,8 @@
   "name": "jay-js",
   "version": "0.0.4",
   "description": "Jay is a framework for creating a single page application.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.js",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/"
-  },
-  "scripts": {
-    "dist": "npx tsc",
-    "prebuild": "node ./scripts/prebuild.js",
-    "pub": "npx tsc && npm publish ./dist"
-  },
+  "main": "./index.js",
+  "types": "./index.d.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AJCastello/jay.git"
@@ -31,9 +19,5 @@
   "bugs": {
     "url": "https://github.com/AJCastello/jay/issues"
   },
-  "homepage": "https://github.com/AJCastello/jay#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "typescript": "^4.7.4"
-  }
+  "homepage": "https://github.com/AJCastello/jay#readme"
 }

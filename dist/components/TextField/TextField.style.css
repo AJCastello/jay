@@ -1,0 +1,13 @@
+
+@import "../config.css";
+
+.textfield {
+  color: var(--text-color-light);
+  width: -webkit-fill-available;
+  border: 1px solid var(--border-light);
+  padding: 10px;
+  font-family: var(--default-font);
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: var(--background-medium);
+}
