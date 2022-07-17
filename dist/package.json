@@ -1,6 +1,6 @@
 {
   "name": "jay-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Jay is a framework for creating a single page application.",
   "main": "./index.js",
   "types": "./index.d.js",

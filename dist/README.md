@@ -34,7 +34,7 @@ Router([
 #UI
 
 ```ts
-import { Button, Section } from "jay-js/components";
+import { Button, Section } from "jay-js/ui";
 
 const HelloWorld = () => {
 

@@ -1,10 +1,20 @@
 @import "./config.css";
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  color: var(--text-color-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 * {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 1.4rem;
   list-style: none;
   box-sizing: border-box;
   line-height: 1.5;
@@ -12,12 +22,4 @@
   font-weight: 500;
   vertical-align: baseline;
   -webkit-appearance: none;
-}
-
-html,
-body {
-  color: var(--text-color-light);
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }

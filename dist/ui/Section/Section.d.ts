@@ -6,7 +6,7 @@ declare type SectionType = {
         name: string;
         callback: (e: Event) => void;
     }>;
-    content: string | Function | Node | any;
+    content?: string | Function | Node | any;
     className?: string | Function;
     attributes?: Array<{
         name: string;

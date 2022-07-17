@@ -16,7 +16,7 @@ Jay provides you a dynamic <i>`Router`</i>, <i>`UI`</i> components with reactive
 #Router
 
 ```ts
-import { Router } from "jay-ts/router"
+import { Router } from "jay-js/router"
 import { Home, Contact } from "./pages"
 
 const renderTarget = document.getElementById("root");
@@ -31,40 +31,53 @@ Router([
 // contents without "re-render" it throught navigation
 
 ```
+
 #UI
 
 ```ts
-import { Button, Section } from "jay-js/components";
+import { Button, Section } from "jay-js/ui";
 
 const HelloWorld = () => {
 
   const NavHeader = Section({
     className: "my-header-class"
   })
-  
+
   const MyButton = Button({
-    className: "my-button", // optional, Jay has built-in styles
-    content: "Click Me!"
+    // className: "my-button", // optional, Jay has built-in styles
+    content: "Click Me!",
     click: () => {
       alert("Hello from Button");
     }
   })
-  
+
   NavHeader.append(
-    "Hello World",
+    "Hello World!",
     MyButton
   )
-    
-  // OR -----
-    
+
+  return NavHeader;
+}
+
+const root = document.getElementById("root");
+root.append(HelloWorld())
+```
+
+OR -----
+
+```ts   
+import { Button, Section } from "jay-js/ui";
+
+const HelloWorld = () => {
+
   const MyButton = Button({
-    className: "my-button", // optional, Jay has built-in styles
-    content: "Click Me!"
+    // className: "my-button", // optional, Jay has built-in styles
+    content: "Click Me!",
     click: () => {
       alert("Hello from Button");
     }
   })
-  
+
   const NavHeader = Section({
     className: "my-header-class",
     content: [
@@ -73,12 +86,11 @@ const HelloWorld = () => {
       ]
   })
   
-  return NavHeader
-
+  return NavHeader;
 }
 
 const root = document.getElementById("root");
-root.appendChild(ClickMe())
+root.append(HelloWorld())
 
 ```
 

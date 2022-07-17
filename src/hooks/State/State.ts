@@ -13,7 +13,6 @@ export const State = <T> (data: T): StateType => ({
   set(newData: T) {
     data = newData;
     this.data = newData;
-    console.log(this.changes)
     if (this.observable) this.changes.forEach((change: Function) => change());
   },
   get() {

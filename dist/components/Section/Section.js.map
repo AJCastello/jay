@@ -1,1 +1,0 @@
-{"version":3,"file":"Section.js","sourceRoot":"","sources":["../../../src/components/Section/Section.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,YAAY,CAAC;AAYrC,MAAM,CAAC,MAAM,OAAO,GAAG,CAAC,KAAkB,EAAE,EAAE;IAC5C,MAAM,GAAG,GAAG,OAAO,CAAC,EAAE,GAAG,EAAE,SAAS,EAAE,GAAG,KAAK,EAAC,CAAC,CAAC;IACjD,OAAO,GAAG,CAAC;AACb,CAAC,CAAA"}

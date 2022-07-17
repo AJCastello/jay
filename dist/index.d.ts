@@ -6,7 +6,7 @@
  * @license: MIT
  *
  */
-export * from "./components";
+export * from "./ui";
 export * from "./hooks";
 export * from "./router";
 export * from "./utils";
