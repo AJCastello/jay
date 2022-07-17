@@ -1,18 +1,18 @@
-import "./Button.style.css";
-export declare type ButtonType = {
+import "./Space.style.css";
+declare type SpaceType = {
     id?: string;
     tag?: string;
+    size?: "small" | "medium" | "large";
     style?: string;
     events?: Array<{
         name: string;
         callback: (e: Event) => void;
     }>;
-    content: string | Function | Node | any;
     className?: string | Function;
     attributes?: Array<{
         name: string;
         value: string;
     }>;
-    click?: () => void;
 };
-export declare const Button: (props: ButtonType) => HTMLElement;
+export declare const Space: (props: SpaceType) => HTMLElement;
+export {};

@@ -21,8 +21,12 @@ export const getPotentialMatch = () => {
     return match;
 };
 export const Router = (routes = contextRoutes) => {
-    contextRoutes.length = 0;
-    contextRoutes.push(...routes);
+    if (routes.length === 0) {
+        throw new Error("No routes provided");
+    }
+    if (contextRoutes.length === 0) {
+        contextRoutes.push(...routes);
+    }
     const match = getPotentialMatch();
     match.route.element && (match.route.target.innerHTML = "", match.route.target.append(match.route.element()));
     return;
