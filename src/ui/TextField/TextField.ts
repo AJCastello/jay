@@ -7,7 +7,7 @@ type TextFieldType = {
   id?: string;
   tag?: string;
   type?: string;
-  style?: string;
+  style?: Partial<CSSStyleDeclaration>;
   value?: string;
   events?: Array<{ name: string, callback: (e: Event) => void }>;
   className?: string | Function;

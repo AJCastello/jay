@@ -1,7 +1,7 @@
 declare type SectionType = {
     id?: string;
     tag?: string;
-    style?: string;
+    style?: Partial<CSSStyleDeclaration>;
     events?: Array<{
         name: string;
         callback: (e: Event) => void;

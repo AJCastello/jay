@@ -1,17 +1,17 @@
-export declare type ElementType = {
+declare type ImageType = {
     id?: string;
-    tag: string;
+    tag?: string;
+    src?: string | Function | Node | any;
     style?: Partial<CSSStyleDeclaration>;
     events?: Array<{
         name: string;
         callback: (e: Event) => void;
     }>;
-    content?: string | Function | Node;
     className?: string | Function;
     attributes?: Array<{
         name: string;
         value: string;
     }>;
-    defaultClassName?: string;
 };
-export declare const Element: (props: ElementType) => HTMLElement;
+export declare const Img: (props: ImageType) => HTMLImageElement;
+export {};

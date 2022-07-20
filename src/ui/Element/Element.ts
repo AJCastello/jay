@@ -3,7 +3,7 @@ import { uniKey, setProp } from "../../utils";
 export type ElementType = {
   id?: string;
   tag: string;
-  style?: string;
+  style?: Partial<CSSStyleDeclaration>;
   events?: Array<{ name: string, callback: (e: Event) => void }>;
   content?: string | Function | Node;
   className?: string | Function;
@@ -18,5 +18,13 @@ export const Element = (props: ElementType) => {
   props.content && setProp(obj, props.content);
   props.events?.forEach(event => obj.addEventListener(event.name, event.callback));
   props.attributes?.forEach(attribute => obj.setAttribute(attribute.name, attribute.value));
+
+  if (props.style) {
+    Object.keys(props.style).forEach((key: string) => {
+      if (props.style)
+        obj.style[key as any] = props.style[key as any] as string;
+    });
+  }
+
   return obj;
 }

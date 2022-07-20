@@ -2,7 +2,7 @@ import "./Button.style.css";
 export declare type ButtonType = {
     id?: string;
     tag?: string;
-    style?: string;
+    style?: Partial<CSSStyleDeclaration>;
     events?: Array<{
         name: string;
         callback: (e: Event) => void;

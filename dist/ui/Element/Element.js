@@ -6,6 +6,12 @@ export const Element = (props) => {
     props.content && setProp(obj, props.content);
     props.events?.forEach(event => obj.addEventListener(event.name, event.callback));
     props.attributes?.forEach(attribute => obj.setAttribute(attribute.name, attribute.value));
+    if (props.style) {
+        Object.keys(props.style).forEach((key) => {
+            if (props.style)
+                obj.style[key] = props.style[key];
+        });
+    }
     return obj;
 };
 //# sourceMappingURL=Element.js.map
