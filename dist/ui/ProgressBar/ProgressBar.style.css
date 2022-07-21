@@ -1,0 +1,26 @@
+.progress-bar{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-small {
+  height: 1rem;
+}
+
+.progress-bar-medium {
+  height: 2rem;
+}
+
+.progress-bar-large {
+  height: 4rem;
+}
+
+.progress-bar-inner{
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 1rem;
+} 
+

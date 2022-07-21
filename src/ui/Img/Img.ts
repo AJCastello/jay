@@ -7,7 +7,7 @@ type ImageType = {
   style?: Partial<CSSStyleDeclaration>;
   events?: Array<{ name: string, callback: (e: Event) => void }>;
   className?: string | Function;
-  attributes?: Array<{ name: string, value: string }>;
+  attributes?: Array<[string, string]>;
 }
 
 export const Img = (props: ImageType) => {

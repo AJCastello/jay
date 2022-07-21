@@ -7,7 +7,7 @@ export type ElementType = {
   events?: Array<{ name: string, callback: (e: Event) => void }>;
   content?: string | Function | Node;
   className?: string | Function;
-  attributes?: Array<{ name: string, value: string }>;
+  attributes?: Array<[string, string]>;
   defaultClassName?: string;
 }
 
@@ -17,7 +17,7 @@ export const Element = (props: ElementType) => {
   props.className ? setProp({ obj: obj, attr: "className" }, props.className) : obj.className = (props.defaultClassName ? props.defaultClassName : props.tag);
   props.content && setProp(obj, props.content);
   props.events?.forEach(event => obj.addEventListener(event.name, event.callback));
-  props.attributes?.forEach(attribute => obj.setAttribute(attribute.name, attribute.value));
+  props.attributes?.forEach(attribute => obj.setAttribute(attribute[0], attribute[1]));
 
   if (props.style) {
     Object.keys(props.style).forEach((key: string) => {

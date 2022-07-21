@@ -8,10 +8,7 @@ declare type SectionType = {
     }>;
     content?: string | Function | Node | any;
     className?: string | Function;
-    attributes?: Array<{
-        name: string;
-        value: string;
-    }>;
+    attributes?: Array<[string, string]>;
 };
 export declare const Section: (props: SectionType) => HTMLElement;
 export {};

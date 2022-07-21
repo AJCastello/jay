@@ -8,10 +8,7 @@ declare type ImageType = {
         callback: (e: Event) => void;
     }>;
     className?: string | Function;
-    attributes?: Array<{
-        name: string;
-        value: string;
-    }>;
+    attributes?: Array<[string, string]>;
 };
 export declare const Img: (props: ImageType) => HTMLImageElement;
 export {};

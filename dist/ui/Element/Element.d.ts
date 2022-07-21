@@ -8,10 +8,7 @@ export declare type ElementType = {
     }>;
     content?: string | Function | Node;
     className?: string | Function;
-    attributes?: Array<{
-        name: string;
-        value: string;
-    }>;
+    attributes?: Array<[string, string]>;
     defaultClassName?: string;
 };
 export declare const Element: (props: ElementType) => HTMLElement;

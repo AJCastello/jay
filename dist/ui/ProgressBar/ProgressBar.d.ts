@@ -1,5 +1,5 @@
-import "./Space.style.css";
-declare type SpaceType = {
+import "./ProgressBar.style.css";
+declare type ProgressBarType = {
     id?: string;
     tag?: string;
     size?: "small" | "medium" | "large";
@@ -10,6 +10,10 @@ declare type SpaceType = {
     }>;
     className?: string | Function;
     attributes?: Array<[string, string]>;
+    value?: number;
 };
-export declare const Space: (props: SpaceType) => HTMLElement;
+interface ProgressBarInterface extends HTMLElement {
+    set: (value: number) => void;
+}
+export declare const ProgressBar: (props: ProgressBarType) => ProgressBarInterface;
 export {};

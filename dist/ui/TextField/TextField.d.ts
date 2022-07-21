@@ -10,10 +10,7 @@ declare type TextFieldType = {
         callback: (e: Event) => void;
     }>;
     className?: string | Function;
-    attributes?: Array<{
-        name: string;
-        value: string;
-    }>;
+    attributes?: Array<[string, string]>;
     placeholder?: string;
     keyup?: (e: Event) => void;
     change?: (e: Event) => void;

@@ -9,10 +9,7 @@ export declare type ButtonType = {
     }>;
     content: string | Function | Node | any;
     className?: string | Function;
-    attributes?: Array<{
-        name: string;
-        value: string;
-    }>;
+    attributes?: Array<[string, string]>;
     click?: () => void;
 };
 export declare const Button: (props: ButtonType) => HTMLElement;

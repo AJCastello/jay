@@ -5,7 +5,7 @@ export const Element = (props) => {
     props.className ? setProp({ obj: obj, attr: "className" }, props.className) : obj.className = (props.defaultClassName ? props.defaultClassName : props.tag);
     props.content && setProp(obj, props.content);
     props.events?.forEach(event => obj.addEventListener(event.name, event.callback));
-    props.attributes?.forEach(attribute => obj.setAttribute(attribute.name, attribute.value));
+    props.attributes?.forEach(attribute => obj.setAttribute(attribute[0], attribute[1]));
     if (props.style) {
         Object.keys(props.style).forEach((key) => {
             if (props.style)
